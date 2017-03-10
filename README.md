@@ -34,3 +34,22 @@ To use Nunit you'll need to modify your `project.json` so it looks like this:
     }
 }
 ```
+# Monitoring
+
+The project uses ApplicationInsights which runs at StartUp level. We can set up our InstrumentationKey in appsettings.json. 
+
+```
+  "ApplicationInsights": {
+    "InstrumentationKey": ""
+  }
+```
+
+We'll add ApplicationInsight as a Service only if the instrumentation key has been set up
+```
+        private bool AddApplicationInsights()
+        {
+            return !string.IsNullOrEmpty(Configuration["ApplicationInsights:InstrumentationKey"]);
+        }
+```
+
+Remember that properties inside [Configuration](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration "Configuration") are nested in .NetCore. That's why you'll need `ApplicationInsights:InstrumentationKey` 
