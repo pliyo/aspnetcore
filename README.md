@@ -1,4 +1,4 @@
-# aspnetcore-baseline
+# Asp Net Core Web Api
 The goal of this project is to serve as a baseline of study for .NetCore by implementing an API and all the tests needed to ensure its ready to ship.
 
 # Before getting started
