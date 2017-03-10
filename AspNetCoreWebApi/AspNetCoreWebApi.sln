@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5D626DB9-5
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreWebApi.EndToEndTests", "AspNetCoreWebApi.EndToEndTests\AspNetCoreWebApi.EndToEndTests.xproj", "{A70F2590-D7E5-4E45-8150-E62CE80D98FD}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCoreWebApi.UnitTests", "AspNetCoreWebApi.UnitTests\AspNetCoreWebApi.UnitTests.xproj", "{A2028155-78EE-48D1-B188-36C826A53A55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{A70F2590-D7E5-4E45-8150-E62CE80D98FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A70F2590-D7E5-4E45-8150-E62CE80D98FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A70F2590-D7E5-4E45-8150-E62CE80D98FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2028155-78EE-48D1-B188-36C826A53A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2028155-78EE-48D1-B188-36C826A53A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2028155-78EE-48D1-B188-36C826A53A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2028155-78EE-48D1-B188-36C826A53A55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,5 +43,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{50C88DA6-14AE-4D82-92EC-76A962791719} = {0D724057-B306-4CEF-95D5-226CBD414B6C}
 		{A70F2590-D7E5-4E45-8150-E62CE80D98FD} = {5D626DB9-5FCE-4A0B-B676-5CFB0EE48F4A}
+		{A2028155-78EE-48D1-B188-36C826A53A55} = {5D626DB9-5FCE-4A0B-B676-5CFB0EE48F4A}
 	EndGlobalSection
 EndGlobal
