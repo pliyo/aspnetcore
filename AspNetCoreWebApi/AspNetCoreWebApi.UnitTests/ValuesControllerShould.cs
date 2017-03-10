@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AspNetCoreWebApi.Controllers;
 using NUnit.Framework;
 
 namespace AspNetCoreWebApi.UnitTests
@@ -9,10 +6,14 @@ namespace AspNetCoreWebApi.UnitTests
     [TestFixture]
     public class ValuesControllerShould
     {
-        [Test]
-        public void ValuesController()
+        [TestCase(1)]
+        public void ValuesController(int id)
         {
-            Assert.True(true);
+            var controller = new ValuesController();
+
+            var response = controller.Get(id);
+
+            Assert.That("value", Is.EqualTo(response));
         }
     }
 }
